@@ -1,0 +1,185 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+
+.airplanewalipicture {
+    top: 109px;
+    left: 0px;
+    width: 1440px;
+    height: 318px;
+    position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+
+.colornavbar{
+  background-color: red;
+}
+.desktop1-rectangle16 {
+    top: 635px;
+    left: 76px;
+    width: 351px;
+    height: 351px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.desktop1-rectangle17 {
+    top: 626px;
+    left: 1003px;
+    width: 351px;
+    height: 351px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+}
+.desktop1-text39{
+top: 648px;
+left: 565px;
+color: rgba(0, 0, 0, 1);
+width: 255px;
+height: auto;
+position: absolute;
+font-size: 32px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+font-style: Regular;
+text-align: center;
+font-family: Playball;
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+text-decoration: none;}
+
+.desktop1-rectangle21 {
+    top: 0px;
+    left: 1337px;
+    width: 107px;
+    height: 107px;
+    z-index: 2;
+    position: absolute;
+}
+
+.desktop1-vector1 {
+    top: 34px;
+    left: 1366px;
+    width: 45px;
+    height: 39px;
+    z-index: 3;
+    position: absolute;
+}
+
+.desktop1-vector2 {
+    top: 12px;
+    left: 81px;
+    width: 81px;
+    height: 87px;
+    z-index: 4;
+    position: absolute;
+}
+
+.desktop1-text63 {
+    top: 783px;
+    left: 628px;
+    color: rgba(0, 0, 0, 1);
+    width: 138px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop1-text65 {
+    top: 892px;
+    left: 653px;
+    color: rgba(0, 0, 0, 1);
+    width: 89px;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop1-text41 {
+    top: 689px;
+    left: 590px;
+    color: rgba(0, 0, 0, 1);
+    width: 309px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Playfair Display;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+
+
+.desktop1-text43 {
+    top: 745px;
+    left: 568px;
+    color: rgba(0, 0, 0, 1);
+    width: 249px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-style: Regular;
+    text-align: center;
+    font-family: Playball;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop1-text45 {
+    top: 853px;
+    left: 568px;
+    color: rgba(0, 0, 0, 1);
+    width: 249px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-style: Regular;
+    text-align: center;
+    font-family: Playball;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+
+
+.inline{
+  display: inline-block;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: space-evenly;
+}
