@@ -5,13 +5,12 @@
   <title>Travel Website</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-theme">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Sight India</a>
+      <a class="navbar-brand" href="#" function="click">Sight India</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,25 +22,25 @@
             </button></a>
             
           </li>
-          <li class="nav-item aboutus1" id="aboutus">
+          <li id="aboutus" class="nav-item aboutus1">
             <a class="nav-link active" href="About us.html"><button class="btn btn-primary" type="button">About Us</button></a>
           </li>
           </li>
           
-          <li class="nav-item destination1" id="destination">
+          <li  id="destination" class="nav-item destination1">
             <a class="nav-link active" href="destination.html"><button class="btn btn-primary" type="button">Destinations</button></a>
           </li>
-          <li class="nav-item contactus1" id="contactus">
+          <li  id="contactus" class="nav-item contactus1">
             <a class="nav-link active" href="#"><button class="btn btn-primary" type="button">Contact Us</button></a>
           </li>
-          <li class="nav-item blog1" id="blog">
+          <li  id="blog" class="nav-item blog1">
             <a class="nav-link active" href="#"><button class="btn btn-primary" type="button">Blog</button></a>
           </li>
-          <li class="nav-item packages1" id="packages">
+          <li id="packages" class="nav-item packages1">
             <a class="nav-link active" href="#"><button class="btn btn-primary" type="button">Packages</button></a>
           </li>
-          <li class="nav-item login1" id="login">
-            <a class="nav-link active" href="#"><button class="btn btn-primary" type="button">Log In</button></a>
+          <li id="login" class="nav-item login1">
+            <a class="nav-link active" href="loginpage.html"><button class="btn btn-primary" type="button">Log In</button></a>
           </li>
            
           
@@ -53,7 +52,7 @@
     </div>
   </nav>
 
-  <div id="carouselExample" class="carousel slide">
+  <div id="carouselExample login" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="external/maharashtraimage7517-rfhd-900h.png" class="d-block w-100" alt="mumbai pic">
@@ -89,7 +88,7 @@
     </select>
 
 
-<h1>Pick to date to travel</h1>
+<h1>Pick a date for travel</h1>
 
 <form class="justify-content-center" action="destination.html">
   <label for="Travel Date">Travel Date:</label>
@@ -107,46 +106,10 @@
     </select>
     <a href="destination.html"> <button type="button" class="btn btn-success">Submit <div class="spinner-border" role="status">
       <span class="visually-hidden">Loading...</span>
-    </div></button></a>
-
-
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
-  <script> 
-  const driver= new Driver();
-    driver.defineSteps([
-      {
-        element: '#aboutus',
-        popover:{
-          className:'aboutus',
-          title: 'About us',
-          description:'click on this page to know more about us',
-          position:'bottom'
-        }
-      },
-      {
-        element: '#destination',
-        popover:{
-          className:'destination',
-          title: 'Find your destination',
-          description:'click on this page to find your dream destination',
-          position:'top'
-        }
-      },
-      {
-        element: '#login',
-        popover:{
-          className:'login',
-          title: 'login page',
-          description:'login to travel to your dream destination',
-          position:'bottom'
-        }
-      },
-    ]);
-    driver.start();
-    </script>
 
 
 
