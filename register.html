@@ -48,7 +48,7 @@
         const firebaseConfig = {
           apiKey: "AIzaSyAuQBO3BxVRc-vq9uYS3cC_r64zymKz1cc",
           authDomain: "travel-website-webdevelopment.firebaseapp.com",
-          databaseURL:"https://travel-website-webdevelopment-default-rtdb.asia-southeast1.firebasedatabase.app",
+          databaseURL:"https://travel-website-webdevelopment-default-rtdb.asia-southeast1.firebasedatabase.app/",
           projectId: "travel-website-webdevelopment",
           storageBucket: "travel-website-webdevelopment.appspot.com",
           messagingSenderId: "154836314241",
@@ -63,18 +63,19 @@
 
         let EmailInp = document.getElementById('emailInp');
         let PassInp =  document.getElementById('passwordInp');
-        let FnameInp =  document.getElementById('FnameInp');
-        let LnameInp =  document.getElementById('LnameInp');
+        let FnameInp =  document.getElementById('fnameInp');
+        let LnameInp =  document.getElementById('lnameInp');
         let MainForm =  document.getElementById('MainForm');
 
 
         let RegisterUser = evt=>{
             evt.preventDefault();
 
-            createUserWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
-            
-            .then((credentials)=>{
-                console.log(credentials);
+            createUserWithEmailAndPassword(auth, EmailInp.value, PassInp.value).then((credentials)=>{
+                set(ref(db,'UsersAuthList/' + credentials.user.uid),{
+                  firstname: FnameInp.value,
+                  lastname: LnameInp.value
+                })
 
             })
             .catch((error)=>{

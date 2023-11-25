@@ -40,7 +40,7 @@
         const firebaseConfig = {
           apiKey: "AIzaSyAuQBO3BxVRc-vq9uYS3cC_r64zymKz1cc",
           authDomain: "travel-website-webdevelopment.firebaseapp.com",
-          databaseURL:"https://travel-website-webdevelopment-default-rtdb.asia-southeast1.firebasedatabase.app",
+          databaseURL:"https://travel-website-webdevelopment-default-rtdb.asia-southeast1.firebasedatabase.app/",
           projectId: "travel-website-webdevelopment",
           storageBucket: "travel-website-webdevelopment.appspot.com",
           messagingSenderId: "154836314241",
@@ -62,10 +62,18 @@
         let SignInUser = evt=>{
             evt.preventDefault();
 
-            signInWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
-            
-            .then((credentials)=>{
-                console.log(credentials);
+            signInWithEmailAndPassword(auth, EmailInp.value, PassInp.value).then((credentials)=>{
+                get(child(dbref,'UsersAuthList/' + credentials.user.uid)).then((snapshot)=>{
+                  if(snapshot.exists){
+                    sessionStorage.setItem("user-info",JSON.stringify({
+                      firstname: snapshot.val().firstname,
+                      lastname: snapshot.val().lastname
+                    }))
+                    sessionStorage.setItem("user-creds",JSON.stringify(credentials.user));
+                    window.location.href='index.html';
+                  }
+                })
+                
 
             })
             .catch((error)=>{
